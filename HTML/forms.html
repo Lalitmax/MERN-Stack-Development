@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+               <!-- Form -->
+    <!-- forms are used to collect from the user -->
+               <!-- Action in form -->
+    <!-- Action attribute is used  to define what action needs to be performed when a form is submitted -->
+    <h3>Registration form</h3>
+    <form action="/action.php">
+        <input type="text" placeholder="Username"><br>
+        <input type="password" placeholder="password"><br>
+        <h3>Select your Class</h3>
+        <label for="101">
+            <input type="radio" value="class-XII" name="class" id="101">Class XII
+
+        </label>
+        <label for="102"><br>
+            <input type="radio" value="class-XI" name="class" id="102">Class XI
+
+        </label><br>
+        <h3>Select your subject</h3>
+        <label for="Math">
+            <input type="checkbox" value="class-V" name="class" id="102"> Math
+        </label>
+        <label for="Chem">
+            <input type="checkbox" value="class-VI" name="class" id="104">Chemistory
+        </label>
+        <label for="phy"><br>
+            <input type="checkbox" value="class-VI" name="class" id="104">Physics
+        </label>
+        <label for="cse"><br>
+            <input type="checkbox" value="class-VI" name="class" id="104">CSE
+        </label>
+        <br>
+        <br>
+        <h3>Select your city</h3>
+        <select name="city" id="city">
+            <option value="Delhi">Delhi</option>
+            <option value="Pune">Pune</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Punjab">Punjab</option>
+        </select><br>
+       <br>
+       <h3>Feedback</h3>
+        <textarea name="feedback" id="101" cols="30" rows="10" placeholder="Please give your valuable "></textarea><br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+    
+</body>
+</html>

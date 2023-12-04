@@ -1,0 +1,64 @@
+#testdiv {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+    
+}
+
+
+.container {
+    border: 2px solid black;
+    height: 300px;
+    width: 100px;
+    padding: 10px;
+    background-color: #917474;
+    border-radius: 8px;
+    margin-left: 600px;
+    
+}
+
+.container .light1 {
+    background-color: red;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 8px;
+     
+    
+
+}
+.container .light2 {
+    background-color: rgb(72, 30, 226);
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 8px;
+     
+    
+
+}
+.container .light3 {
+    background-color: rgb(24, 240, 50);
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 8px;
+     
+    
+
+}
+.bottomstick {
+    height: 120px;
+    width: 20px;
+    margin-left:50px;
+    background-color: #765d5d;
+    border-radius: 5px;
+    margin-top: -1px;
+    border: 2px solid black;
+    margin-left: 650px;
+    
+}

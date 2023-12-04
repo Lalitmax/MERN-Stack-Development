@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+.div1 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 2px solid black;
+    /* transform: rotate(95deg); */
+    /* rotate: x 95deg ;
+    rotate: y 95deg ; */
+    /* transform: scale(0.5); */
+    transition: all 1s ease-in;
+    
+    
+    
+}
+
+.div1:hover {
+    background-color: blue;
+    /* transform: scaley(1.2);
+    /*  */
+    /* rotate: 90deg;  */
+    /* transform: translate(50px,80px); */
+    transform: skew(360deg)
+    
+
+}

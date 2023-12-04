@@ -1,0 +1,33 @@
+/* 96px = 1inch = 2.54cm */
+
+* {
+    font-family: sans-serif;
+}
+/* #para-one {
+  font-size: 25px;
+}
+#para-two {
+    font-size: 10px;
+
+} */
+
+p {
+    line-height: 20px;
+    /* text-transform: capitalize; */
+    /* text-transform: uppercase; */
+    text-transform: lowercase;
+    text-align: center;
+
+}
+
+h3 {
+    text-align: center;
+    text-transform: capitalize;ki
+}
+.outer {
+    font-size: 25px;
+}
+.inner {
+    font-size: 12px;
+    padding: 3px;
+}

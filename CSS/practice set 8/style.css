@@ -1,0 +1,22 @@
+div {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* background-color: red; */
+    border: 20px solid blue;
+    border-top: 20px solid rgb(225, 19, 142);
+    animation-name:loadercircle;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  
+}
+
+@keyframes loadercircle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

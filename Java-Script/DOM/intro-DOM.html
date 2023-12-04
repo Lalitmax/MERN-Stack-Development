@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document Object Model</title>
+   <style>
+      body {
+         background-color: rgb(38, 35, 35);
+      }
+
+      h1 {
+         color: white;
+      }
+   </style>
+</head>
+
+<body>
+   <h1>Documnet Object Model</h1>
+
+   <script>
+
+      // 4 Pillars Of DOM
+
+      // 1. Selection Of an Element  --> ✅
+      // 2. Changing HTML --> ✅
+      // 3. Changing CSS
+      // 4. Event Listener
+
+
+      //1. Selection Of an Element
+      var a = document.querySelector("h1"); // you can select =  "h1",   ".header",   "#id"
+      console.log(a);
+
+
+      // 2. Changing HTML
+      a.innerHTML = "Hello World";
+
+
+
+      // 3. Changing CSS
+      a.style.color = "yellow";
+      a.style.backgroundColor = "blue";
+
+      // 4. Event Listener
+      var check = 0;
+      a.addEventListener("click", function () {
+
+
+
+
+         if (check == 0) {
+            console.log(check);
+            a.style.backgroundColor = "red";
+            check = 1;
+         } else {
+            console.log(check);
+            a.style.backgroundColor = "black";
+            check = 0;
+         }
+
+
+
+      });
+
+
+
+   </script>
+</body>
+
+</html>

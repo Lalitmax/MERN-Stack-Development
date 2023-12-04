@@ -1,0 +1,43 @@
+
+p {
+
+    /* text-align: right;
+    text-align: left;
+    text-align: center;
+    text-align: start; */
+    text-align: end;
+}
+.text {
+    text-align: start;
+    background-color: rebeccapurple;
+    width: 23rem;
+    
+}
+#uline {
+    text-decoration:blue  underline;
+}
+#oline {
+    text-decoration: red overline;
+}
+
+#lthrow {
+    text-decoration:wavy line-through;
+}
+
+#udotten {
+    text-decoration: dotted underline;
+}
+div h3 {
+    /* font-weight: bolder; */
+    /* font-weight: lighter; */
+    font-weight:800;
+ 
+}
+ div p {
+
+    font-weight: 800;  /* 100-900*/
+
+}
+p {
+    font-family: sans-serif;
+}

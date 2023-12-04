@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+div{
+    display: inline-block;
+}
+header  {
+    height: 50px;
+    background-color: #615353;
+}
+
+header  {
+    height: 50px;
+    background-color: #2e2a2a;
+}
+#logo {
+    font-size: 22px;
+    color: rgb(234, 234, 35);
+}
+header a {
+    margin-right: 150px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+button {
+    background-color: rgb(231, 188, 14);
+    border: none;
+    color: white;
+    cursor: pointer;
+}

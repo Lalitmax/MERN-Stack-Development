@@ -1,0 +1,46 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 50px;
+    background-color: #352d2d;
+    padding-top: 20px;
+}
+header div a {
+    margin-right:155px ;
+    color: white;
+    text-decoration: none;
+}
+.logo {
+    color: darkorange;
+    font-weight: bold;
+}
+button {
+    background-color:     darkorange;
+    color: white;
+}
+.content {
+    height: 500px;
+    padding: 20px;
+}
+
+.contentBox {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(30, 226, 20);
+    border: 2px solid black;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+
+    
+}
+footer {
+    background-color:  #352d2d;
+    /* height: 10px; */
+    text-align: center;
+    
+}

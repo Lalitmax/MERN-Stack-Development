@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .box{
+         height:200px;
+         width: 200px;
+         background-color: red;
+         border-radius: 10px;
+      }
+      h1{
+         background-color: yellow;
+         color: red;
+      }
+   </style>
+</head>
+<body>
+   <div class="box"></div>
+
+   
+   <script>
+      let box = document.getElementsByClassName("box");
+      box[0].innerHTML = "<h1>hello</h1>";
+      console.log(box);
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>hello world</h1>
+   <h1>hello world cup</h1>
+   <h1>hello india</h1>
+   <h1>hello india cup</h1>
+
+   <script>
+      var allh1 = document.querySelectorAll("h1");
+   console.log(allh1);
+      // for(let i = 0; i<allh1.length; i++){
+      //    let a=allh1[i];
+      //    a.innerHTML="Baby";
+
+      // }
+      
+
+      allh1.forEach(function(e){
+         console.log(e);
+      })
+   </script>
+   
+</body>
+</html>

@@ -1,0 +1,9 @@
+div {
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+    background-image: url('/CSS/images/lavish.png');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    
+}

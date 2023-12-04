@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body{
+         background-color: rgb(61, 55, 55);
+         display: flex;
+         justify-content: center;
+        
+         align-items: center;
+         flex-direction: column;
+         height: 100vh;
+         gap: 2rem;
+      }
+      .bulb{
+         height: 300px;
+         width: 300px;
+      
+         border-radius: 50%;
+         background-color: rgb(167, 158, 158);
+         border: 1px solid #fff;
+         box-shadow: 0px 0px 35px rgb(237, 240, 236);
+      }
+      button{
+         height: 40px;
+         border-radius: 5px;
+         
+         width: 80px;
+         
+      }
+      button:active{
+         background-color: gray;
+      }
+   </style>
+</head>
+<body>
+
+   <div class="bulb"></div>
+   <button>ON</button>
+
+
+
+   <script>
+      var bulb = document.querySelector(".bulb");
+      var btn = document.querySelector("button");
+
+     var check=0;
+    
+      btn.addEventListener("click", function(){
+        if(check==0){
+         bulb.style.backgroundColor="yellow";
+         btn.innerHTML="OFF";
+         check=1;
+        }else{
+         bulb.style.backgroundColor="transparent";
+         btn.innerHTML="ON";
+         check=0;
+        }
+
+      });
+
+     
+
+   </script>
+   
+</body>
+</html>
