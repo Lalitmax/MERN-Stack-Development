@@ -1,0 +1,20 @@
+ body{
+    height: 100vh;
+ }
+ .app-container{
+    display: flex;
+    height: 100vh;
+ }
+ .header-footer{
+    width: 100%;
+    /* position: relative; */
+    
+ }
+  
+ .createPost {
+   width: 90%;
+   margin: 5%;
+   border: 1px solid rgb(210, 210, 210);
+   padding: 10px 20px;
+   border-radius: 5px;
+ }

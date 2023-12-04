@@ -1,0 +1,23 @@
+.lalit-item {
+    /* background-color: rgb(255, 0, 162); */
+    color:#0b0a0a;
+    margin-bottom:1px ;
+  }
+
+body{
+  background-color: #2b2727;
+}
+
+.rightBtn{
+  float:  right;
+  
+}
+
+.active2{
+  background-color: rgb(112, 216, 37);
+   
+}
+.active3{
+  background-color: rgb(216, 37, 37);
+   
+}
