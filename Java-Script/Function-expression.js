@@ -1,9 +1,9 @@
 // Accessible after assignment
 
+console.log(printMyName)
 const printMyName = function(){
    console.log("Hello Lalit");
 }
 
-console.log(printMyName)
 
 printMyName()

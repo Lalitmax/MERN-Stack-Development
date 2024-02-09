@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .odd{
+            background-color: rgb(255, 196, 0);
+        }
+
+        .btn{
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btnColor{
+            background-color: green;
+        }
+        body{
+            display: flex;
+            gap: 2rem;
+            flex-direction: column;
+            align-items: center;
+        }
+        .reset{
+            font-size:30px ;
+            width: 90%;
+            cursor: pointer;
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="gm"><h1>Good Morning</h1></div>
+    <button class="btn btnColor">0</button>
+    <button class="reset">Reset</button>
+</body>
+<script>
+    let btn = document.querySelector('.btn');
+    let reset = document.querySelector('.reset')
+ 
+    let cntNum = JSON.parse(localStorage.getItem('cntNum')) || 0;
+ 
+
+    function showResult(){
+        btn.innerText=cntNum;
+    }
+    showResult()
+    btn.addEventListener('click',()=>{
+        cntNum++;
+        localStorage.setItem('cntNum',cntNum);
+        if(cntNum%2!==0){
+           btn.classList.add('odd')
+           btn.classList.remove('btnColor')
+           console.log(btn.classList)
+        }else{
+            btn.classList.add('btnColor')
+        }
+        btn.style.borderRadius='10px'  
+        showResult()
+    })
+
+    reset.addEventListener('click',()=>{
+        localStorage.clear();
+        cntNum=0;
+        localStorage.setItem('cntNum',cntNum);
+        btn.classList.add('btnColor') 
+        btn.style.borderRadius='50%'  
+        showResult();
+    })
+
+
+</script>
+</html>

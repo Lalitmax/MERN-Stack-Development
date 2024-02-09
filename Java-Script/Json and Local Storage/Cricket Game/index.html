@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="cricket-game.js" defer></script>
+   <title>Document</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      body {
+
+         height: 100vh;
+      }
+
+      .container {
+         height: 100%;
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         gap: 1rem;
+         align-items: center;
+         flex-direction: column;
+      }
+
+      .header {
+         background-color: #080528;
+         width: 100%;
+         height: 5rem;
+         line-height: 5rem;
+         text-align: center;
+         color: #fff;
+      }
+
+      .buttons {
+
+         height: 100px;
+         display: flex;
+         justify-content: center;
+         gap: 2rem;
+         width: 100%;
+         align-items: center;
+         margin-bottom: 9rem;
+      }
+
+      .buttons button {
+         height: 80px;
+         width: 160px;
+         font-size: 30px;
+         cursor: pointer;
+         border-radius: 10px;
+      }
+
+      .scoreBox {
+         display: flex;
+         font-size: 30px;
+         text-align: center;
+         gap: 2rem;
+         width: 100%;
+         height: 100px;
+
+
+      }
+
+      .scors {
+         margin-bottom: 9rem;
+
+         /* border: 1px solid black; */
+
+         gap: 2rem;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         text-align: center;
+
+      }
+
+      .reset {
+         font-size: 30px;
+         border-radius: 4px;
+         cursor: pointer;
+
+      }
+
+      .winningDisplay {
+         font-size: 30px;
+         background-color: black;
+         color: #fff;
+         border-radius: 10px;
+      }
+
+      @media  screen  and (max-width:600px) {
+         .buttons button {
+            height: 60px;
+            width: 100px;
+            gap: 0px;
+            font-size: 25px;
+
+         }
+
+      }
+   </style>
+</head>
+
+<body>
+
+   <div class="container">
+      <div class="header">
+         <h1>Bat Ball Stump Game</h1>
+      </div>
+      <div class="buttons">
+         <button id="bat">Bat</button>
+         <button id="ball">Ball</button>
+         <button id="stump">Stump</button>
+      </div>
+
+      <div class="scors">
+         <div class="scoreBox">
+            <p class="userScore">User:0</p>
+            <p class="compScore">Comp:0</p>
+
+         </div>
+         <div class="winningDisplay">Start Game</div>
+         <button class="reset">Reset</button>
+      </div>
+
+
+
+   </div>
+
+</body>
+
+</html>
