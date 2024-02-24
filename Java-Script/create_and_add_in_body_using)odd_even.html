@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even and Odd Numbers</title>
+    <style>
+       
+
+        .odd {
+            color: red;
+            font-size: 22px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        const outputElement = document.body;
+        
+        for (let i = 1; i <= 20; i++) {
+            const numberElement = document.createElement("div");
+            const b = document.createElement('br')
+            numberElement.textContent = i;
+
+            if (i % 2 !== 0) {
+
+                numberElement.className = "odd";
+                outputElement.appendChild(numberElement);
+                outputElement.appendChild(b);
+                outputElement.appendChild(b);
+                 
+            }  
+            
+        }
+
+
+    </script>
+</body>
+
+</html>
