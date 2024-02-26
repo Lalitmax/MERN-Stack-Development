@@ -1,7 +1,7 @@
 // Api  - > application programing interface
 const URL = "https://cat-fact.herokuapp.com/facts"
 
-var figlet = require("figlet");
+ 
 const getFact = document.querySelector('.fact')
 const btn = document.querySelector('.btn')
 
