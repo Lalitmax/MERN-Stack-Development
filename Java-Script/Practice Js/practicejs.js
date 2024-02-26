@@ -68,16 +68,33 @@
 // })
 
 
-// function asyncFunc(dataId) {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             console.log('data1',dataId)
-//             resolve('succes')
+function asyncFunc(dataId) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log('data1', dataId)
+            resolve('succes')
 
-//         }, 2000)
+        }, 2000)
+    })
+}
+
+
+// let p1 = asyncFunc(1)
+// p1.then(() => {
+//     let p2 = asyncFunc(2);
+//     p2.then(() => {
+//         asyncFunc(3)
 //     })
-// }
+// })
 
+asyncFunc(1).
+    then(() => {
+        return asyncFunc(2);
+    }).then(()=>{
+        return asyncFunc(3);
+    }).then(()=>{
+        return asyncFunc(4)
+    })
 
 
 // asyncFunc(1).
@@ -100,25 +117,25 @@
 
 
 
-function api(id) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log('data1',id)
-            resolve('success')
+// function api(id) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log('data1',id)
+//             resolve('success')
 
-        }, 2000);
-    })
-}
+//         }, 2000);
+//     })
+// }
 
 
-async function getData(){
-   await api(1).then(res=>{
-    console.log(res)
-   })
-   await api(2).then((res)=>{
-    console.log(res)
-   })
+// async function getData(){
+//    await api(1).then(res=>{
+//     console.log(res)
+//    })
+//    await api(2).then((res)=>{
+//     console.log(res)
+//    })
 
-}
+// }
 
-getData()
+// getData()
