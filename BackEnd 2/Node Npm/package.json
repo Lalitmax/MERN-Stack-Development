@@ -1,0 +1,11 @@
+{
+  "name": "node-npm",
+  "version": "1.0.0",
+  "description": "node example practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Lalit Max",
+  "license": "ISC"
+}
