@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4d4040;
+            color: #ffffff;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            border: 1px solid red;
+            background-color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: black;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .auth-links {
+            float: right;
+        }
+
+        .auth-links a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .btn-signup {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .hero {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn-cta {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .userLogged{
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Todo App</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-links">
+                <div class="userLogged">
+                    <h1>Lk</h1>
+                    <button>LogOut</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Todo App</h2>
+            <p>Organize your tasks and stay productive</p>
+            <a href="#" class="btn-cta">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Additional sections for content -->
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Todo App. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
